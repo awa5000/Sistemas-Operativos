@@ -6,7 +6,7 @@
 #include "executor.h"
 using namespace std;
 void show_prompt(){
-  cout<<"mi_shell";
+  cout<<"mi_shell>> ";
   cout.flush();
 }
 

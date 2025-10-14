@@ -16,7 +16,7 @@ struct Command{
   vector<SimpleCommand> commands;
   string inputFile;
   string outputFile;
-  RedirectionType rendirection = RedirectionType::NONE;
+  RedirectionType redirection = RedirectionType::NONE;
   bool background = false;
 };
 #endif
