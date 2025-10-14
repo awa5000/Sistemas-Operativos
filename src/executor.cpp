@@ -16,7 +16,7 @@ void execute_command(const Command& command){
   }
   if(command.commands.size()>1){
     execute_pipe_command(command);
-  else{
+  }else{
     const auto& simple_cmd = command.commands[0];
     if(handle_builtin_command(simple_cmd)){
       return;
@@ -139,5 +139,4 @@ static char* const* convert_to_c_array(const vector<string>& args){
   }
   c_args[args.size()] = nullptr;
   return c_args;
-}
 }
