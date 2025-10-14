@@ -17,7 +17,7 @@ void execute_command(const Command& command){
   if(command.commands.size()>1){
     execute_pipe_command(command);
   }
-  else{
+  }else{
     const auto& simple_cmd = command.commands[0];
     if(handle_builtin_command(simple_cmd)){
       return;
